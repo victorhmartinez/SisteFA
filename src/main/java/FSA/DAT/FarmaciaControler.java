@@ -20,6 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class FarmaciaControler {
     @GetMapping("/farmacia")
     public FarmaciaJ listar(){
-        return new FarmaciaJ(1,"Primeros Auxilios");
+        return new FarmaciaJ(123,"Primeros Auxilios");
     }
 }
