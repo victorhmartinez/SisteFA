@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package FSA.DAT;
+package FSA.LOG;
 
 import FSA.ENT.FarmaciaJ;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 public class FarmaciaControler {
-    @GetMapping("/farmacia")
+    @GetMapping("/fr")
     public FarmaciaJ listar(){
-        return new FarmaciaJ(123,"Primeros Auxilios");
+        return new FarmaciaJ(1251, "PRIMEROS AUXILIO",1,1);
     }
 }

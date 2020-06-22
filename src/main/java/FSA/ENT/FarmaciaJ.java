@@ -12,11 +12,17 @@ package FSA.ENT;
 public class FarmaciaJ {
     private int id;
     private String nombre;
+    private int idDireccion;
+    private int idContacto;
 
-    public FarmaciaJ(int id, String nombre) {
+    public FarmaciaJ(int id, String nombre, int idDireccion, int idContacto) {
         this.id = id;
         this.nombre = nombre;
+        this.idDireccion = idDireccion;
+        this.idContacto = idContacto;
     }
+
+  
 
     public int getId() {
         return id;
@@ -32,6 +38,22 @@ public class FarmaciaJ {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public int getIdDireccion() {
+        return idDireccion;
+    }
+
+    public void setIdDireccion(int idDireccion) {
+        this.idDireccion = idDireccion;
+    }
+
+    public int getIdContacto() {
+        return idContacto;
+    }
+
+    public void setIdContacto(int idContacto) {
+        this.idContacto = idContacto;
     }
 
     @Override
